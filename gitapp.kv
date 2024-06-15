@@ -1,0 +1,104 @@
+<MainMenu>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 20
+        spacing: 20
+        Label:
+            text: 'Изучение и практика Git'
+            font_size: 32
+            color: 0, 0, 0, 1
+            bold: True
+            size_hint: 1, 0.2
+        Button:
+            text: 'Начать игру'
+            size_hint: 1, 0.2
+            on_release: root.start_game()
+        Button:
+            text: 'О приложении'
+            size_hint: 1, 0.2
+            on_release: root.about()
+        Button:
+            text: 'Выход'
+            size_hint: 1, 0.2
+            on_release: root.exit_app()
+
+<LevelSelection>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 20
+        spacing: 20
+        Label:
+            text: 'Выберите уровень'
+            font_size: 32
+            bold: True
+            size_hint: 1, 0.2
+        Button:
+            text: 'Начальный уровень'
+            size_hint: 1, 0.2
+            on_release: root.start_easy()
+        Button:
+            text: 'Средний уровень'
+            size_hint: 1, 0.2
+            on_release: root.start_medium()
+        Button:
+            text: 'Продвинутый уровень'
+            size_hint: 1, 0.2
+            on_release: root.start_hard()
+        Button:
+            text: 'Назад'
+            size_hint: 1, 0.2
+            on_release: root.back_to_menu()
+
+<GameScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 20
+        spacing: 20
+        Label:
+            id: level_label
+            text: 'Уровень: '
+            font_size: 24
+            size_hint: 1, 0.1
+        Label:
+            id: question_label
+            text: ''
+            font_size: 18
+            size_hint: 1, 0.2
+        TextInput:
+            id: command_input
+            text: 'Введите команду Git'
+            multiline: False
+            size_hint: 1, 0.1
+            on_text_validate: root.check_answer()
+        Label:
+            id: command_output
+            text: ''
+            size_hint: 1, 0.4
+        Label:
+            id: score_label
+            text: 'Счет: '
+            font_size: 18
+            size_hint: 1, 0.1
+        Button:
+            text: 'Назад'
+            size_hint: 1, 0.1
+            on_release: root.back_to_levels()
+
+<AboutScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 20
+        spacing: 20
+        Label:
+            text: 'О приложении'
+            font_size: 32
+            bold: True
+            size_hint: 1, 0.2
+        Label:
+            text: 'Это приложение разработано для изучения и практики команд Git. Оно включает в себя разные уровни сложности и элементы геймификации. Приятного обучения!'
+            font_size: 18
+            size_hint: 1, 0.6
+        Button:
+            text: 'Назад'
+            size_hint: 1, 0.2
+            on_release: root.back_to_menu()
