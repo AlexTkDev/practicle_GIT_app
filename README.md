@@ -16,7 +16,8 @@
    1. Клонируйте репозиторий:
 
       git clone https://github.com/AlexTkDev/practicle_GIT_app.git
-      cd practicle_GIT_app
+
+       cd practicle_GIT_app
 
    3. Создайте и активируйте виртуальное окружение:
 
