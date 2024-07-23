@@ -14,29 +14,31 @@
 Для установки необходимых зависимостей и запуска игры выполните следующие шаги:
 
    1. Клонируйте репозиторий:
-
+```bash
       git clone https://github.com/AlexTkDev/practicle_GIT_app.git
 
        cd practicle_GIT_app
+```
 
    3. Создайте и активируйте виртуальное окружение:
-
+```bash
       python -m venv venv
       source venv/bin/activate
 
       venv\Scripts\activate
-
+```
 
    4. Установите зависимости:
-
+```bash
          pip install -r requirements.txt
+```
 
 ## Запуск игры
 
 Для запуска игры используйте следующую команду:
-   
+```bash   
    python main.py
-   
+```
 
 
 ## Структура проекта
