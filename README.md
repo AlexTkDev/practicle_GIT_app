@@ -15,22 +15,22 @@
 
    1. Клонируйте репозиторий:
 ```bash
-      git clone https://github.com/AlexTkDev/practicle_GIT_app.git
+   git clone https://github.com/AlexTkDev/practicle_GIT_app.git
 
-       cd practicle_GIT_app
+   cd practicle_GIT_app
 ```
 
    3. Создайте и активируйте виртуальное окружение:
 ```bash
-      python -m venv venv
-      source venv/bin/activate
+   python -m venv venv
+   source venv/bin/activate
 
-      venv\Scripts\activate
+   venv\Scripts\activate
 ```
 
    4. Установите зависимости:
 ```bash
-         pip install -r requirements.txt
+    pip install -r requirements.txt
 ```
 
 ## Запуск игры
